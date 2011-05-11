@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.myimgscale-0.2.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <title>Kittinerator</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="http://placekitten.com/g/600/100">
+      <div class="header-text-parent">
+      <div class="header-text">Kittinerator</div>
+      </div>
+    </div>
+    <div class="all-postlets">
+    {% for post_column in posts %}
+      <div id="column{{ forloop.counter }}" class="column">
+      {% for post in post_column %}
+      <div class="postlet">
+        <div class="postlet-author">
+          {% if post.author %}
+            <b>{{ post.author }}</b> wrote:
+          {% else %}
+            An anonymous person wrote:
+          {% endif %}
+        </div>
+        {% if post.images %}
+          <a href="{{ post.images.0}}"><div class="postlet-content postlet-image"><img src="{{ post.images.0 }}"/></div></a>
+        {% endif %}
+        {% if post.videos %}
+          {% autoescape off %}
+          <div class="postlet-content video">{{ post.videos.0 }}</div>
+          {% endautoescape %}
+        {% endif %}
+        {% if post.attachments %}
+          <a href="img?img_id={{ post.key }}"><div class="postlet-content postlet-image"><img src="img?img_id={{ post.key }}"></div></a>
+        {% endif %}
+        {% if post.caption %}
+          <div class="postlet-caption">{{ post.caption }}</div>
+        {% endif %}
+        {% if post.content %}
+          <div class="postlet-text">
+            <blockquote>{{ post.content|escape }}</blockquote>
+          </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      </div>
+    {% endfor %}
+    <div class="notice-board-column column">
+      <div class="notice-board-wrapper">
+      <div class="notice-board"><a href="{{ url }}">{{ url_linktext }}</a></div>
+      <div class="notice-board">Contribute by emailing: <a href="mailto:kittens@orbit-test.appspotmail.com">kittens@orbit-test.appspotmail.com</a> or posting an image link below!
+      <p style="font-size: small">Note: your emails should have the image attached or they need to be in html form with images as &lt;img src&gt; tags.</p>
+      </div>
+      {% if top_contributors %}
+      <div class="notice-board"> Top contributors: 
+        {% for contributor in top_contributors %}
+          <br>
+          {{ forloop.counter }}. {{ contributor.0 }}
+        {% endfor %}
+      </div>
+      {% endif %}
+      </div>
+    </div>
+    <br style="clear: both;" /> 
+    </div>
+    
+    <div class="posting-area">
+      <form action="/sign" method="post">
+        <div><b>Add a post:</b></div>
+        <div><span class="submit-form-label">URL:</span><textarea name="url" rows="1" cols="80"></textarea></div>
+        <div><span class="submit-form-label">Caption:</span><textarea name="caption" rows="3" cols="80"></textarea></div>
+        <div class="submit-button"><input type="submit" value="Submit"></div>
+      </form>
+    </div>
+    <div class="footer">
+      <img src="http://code.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" />
+      <a href="http://www.djangoproject.com/"><img src="http://media.djangoproject.com/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django." /></a>
+      <br>© 2011
+    </div>
+  </body>
+</html>

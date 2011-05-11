@@ -1,0 +1,120 @@
+div.hidden {
+  visibility: hidden;
+}
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #DDDDDD;
+  margin: 0;
+  padding: 0;
+}
+
+div.header {
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+div.header-text-parent {
+    position: relative;
+}
+
+div.header-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    float: right;
+    font-weight: bold;
+    color: white;
+    font-size: 26;
+}
+
+div.column {
+  margin: 10px;
+  width: 350;
+  float: left;
+}
+
+div.all-postlets {
+  margin: 10px;
+}
+
+/* ========== */
+/* = Postlet = */
+/* ========== */
+
+div.postlet-content {
+  width: 90%;
+  margin: auto;
+}
+
+div.postlet-image img {
+  padding: 10px;
+}
+
+div.video {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+div.postlet {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+div.postlet-author {
+  margin: 5px 20px 5px 20px;
+}
+
+div.postlet-caption {
+  font-weight: bold;
+  margin: 10px 20px 10px 20px;
+}
+
+div.postlet-text {
+  font-size: small;
+  background-color: #EBEDED;
+  padding: 4px;
+}
+
+/* =============== */
+/* = Submit post = */
+/* =============== */
+
+span.submit-form-label {
+  float: left;
+  width: 100px;
+}
+
+div.posting-area {
+  margin: 20px;
+}
+
+/* ================ */
+/* = Notice board = */
+/* ================ */
+
+div.notice-board {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+div.notice-board-column {
+  width: 250;
+}
+
+div.notice-board-wrapper {
+  margin: 5px;
+}
+
+/* ========== */
+/* = Footer = */
+/* ========== */
+
+div.footer {
+  font-size: xx-small;
+  margin: 5px;
+  text-align: center;
+}

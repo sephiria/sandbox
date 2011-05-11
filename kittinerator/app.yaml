@@ -1,0 +1,24 @@
+application: orbit-test
+version: 6
+runtime: python
+api_version: 1
+
+handlers:
+- url: /favicon\.ico
+  static_files: images/favicon.ico
+  upload: images/favicon\.ico
+
+- url: /js
+  static_dir: js
+  
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /_ah/mail/kittens.+
+  script: handle_kitten_mail.py
+  
+- url: /.*
+  script: main.py
+
+inbound_services:
+- mail
