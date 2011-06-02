@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E69BDEB1395CE490069C8F2 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E69BDEA1395CE490069C8F2 /* Placeholder.png */; };
+		2E69BE5D1395FB020069C8F2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E69BE5B1395FB010069C8F2 /* WebViewController.m */; };
+		2E69BE5E1395FB020069C8F2 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E69BE5C1395FB020069C8F2 /* WebViewController.xib */; };
+		2E69BECF139688920069C8F2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E69BECD139688920069C8F2 /* default.png */; };
+		2E69BED0139688920069C8F2 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E69BECE139688920069C8F2 /* default@2x.png */; };
+		2E9AF3621393786500D9D1AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9AF3611393786500D9D1AC /* UIKit.framework */; };
+		2E9AF3641393786500D9D1AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9AF3631393786500D9D1AC /* Foundation.framework */; };
+		2E9AF3661393786500D9D1AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9AF3651393786500D9D1AC /* CoreGraphics.framework */; };
+		2E9AF36C1393786500D9D1AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E9AF36A1393786500D9D1AC /* InfoPlist.strings */; };
+		2E9AF36F1393786500D9D1AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF36E1393786500D9D1AC /* main.m */; };
+		2E9AF3721393786500D9D1AC /* YAFAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF3711393786500D9D1AC /* YAFAAppDelegate.m */; };
+		2E9AF3751393786500D9D1AC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9AF3731393786500D9D1AC /* MainWindow.xib */; };
+		2E9AF3781393786500D9D1AC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF3771393786500D9D1AC /* RootViewController.m */; };
+		2E9AF37B1393786500D9D1AC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9AF3791393786500D9D1AC /* RootViewController.xib */; };
+		2E9AF391139379B700D9D1AC /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF388139379B700D9D1AC /* NSObject+SBJSON.m */; };
+		2E9AF392139379B700D9D1AC /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF38A139379B700D9D1AC /* NSString+SBJSON.m */; };
+		2E9AF393139379B700D9D1AC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF38C139379B700D9D1AC /* SBJsonBase.m */; };
+		2E9AF394139379B700D9D1AC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF38E139379B700D9D1AC /* SBJsonParser.m */; };
+		2E9AF395139379B700D9D1AC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF390139379B700D9D1AC /* SBJsonWriter.m */; };
+		2E9AF3B31394128300D9D1AC /* FlickrDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AF3B21394128300D9D1AC /* FlickrDataSource.m */; };
+		2EA3FC51139435EA00107733 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3FC4F139435E900107733 /* PhotoTableViewController.m */; };
+		2EA3FCE51394716100107733 /* FlickrOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3FCE41394716100107733 /* FlickrOperation.m */; };
+		2EA3FCEC1394759B00107733 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3FCEB1394759A00107733 /* NSString+URLEncoding.m */; };
+		2EA3FD221394A72000107733 /* YAFAPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3FD211394A72000107733 /* YAFAPhoto.m */; };
+		2EA3FD251394B1F800107733 /* FlickrSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3FD241394B1F800107733 /* FlickrSearchOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E69BDEA1395CE490069C8F2 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		2E69BE5A1395FB010069C8F2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2E69BE5B1395FB010069C8F2 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		2E69BE5C1395FB020069C8F2 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		2E69BECD139688920069C8F2 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		2E69BECE139688920069C8F2 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		2E9AF35D1393786500D9D1AC /* YAFA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAFA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9AF3611393786500D9D1AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E9AF3631393786500D9D1AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E9AF3651393786500D9D1AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E9AF3691393786500D9D1AC /* YAFA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YAFA-Info.plist"; sourceTree = "<group>"; };
+		2E9AF36B1393786500D9D1AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E9AF36D1393786500D9D1AC /* YAFA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YAFA-Prefix.pch"; sourceTree = "<group>"; };
+		2E9AF36E1393786500D9D1AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E9AF3701393786500D9D1AC /* YAFAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAFAAppDelegate.h; sourceTree = "<group>"; };
+		2E9AF3711393786500D9D1AC /* YAFAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAFAAppDelegate.m; sourceTree = "<group>"; };
+		2E9AF3741393786500D9D1AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2E9AF3761393786500D9D1AC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2E9AF3771393786500D9D1AC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		2E9AF37A1393786500D9D1AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		2E9AF386139379B700D9D1AC /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		2E9AF387139379B700D9D1AC /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		2E9AF388139379B700D9D1AC /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		2E9AF389139379B700D9D1AC /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		2E9AF38A139379B700D9D1AC /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		2E9AF38B139379B700D9D1AC /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		2E9AF38C139379B700D9D1AC /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		2E9AF38D139379B700D9D1AC /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2E9AF38E139379B700D9D1AC /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2E9AF38F139379B700D9D1AC /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2E9AF390139379B700D9D1AC /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		2E9AF3B11394128300D9D1AC /* FlickrDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDataSource.h; sourceTree = "<group>"; };
+		2E9AF3B21394128300D9D1AC /* FlickrDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrDataSource.m; sourceTree = "<group>"; };
+		2EA3FC4E139435E900107733 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		2EA3FC4F139435E900107733 /* PhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
+		2EA3FCE31394716100107733 /* FlickrOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrOperation.h; sourceTree = "<group>"; };
+		2EA3FCE41394716100107733 /* FlickrOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrOperation.m; sourceTree = "<group>"; };
+		2EA3FCEA1394759A00107733 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		2EA3FCEB1394759A00107733 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		2EA3FD201394A71F00107733 /* YAFAPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAFAPhoto.h; sourceTree = "<group>"; };
+		2EA3FD211394A72000107733 /* YAFAPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAFAPhoto.m; sourceTree = "<group>"; };
+		2EA3FD231394B1F700107733 /* FlickrSearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchOperation.h; sourceTree = "<group>"; };
+		2EA3FD241394B1F800107733 /* FlickrSearchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E9AF35A1393786500D9D1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9AF3621393786500D9D1AC /* UIKit.framework in Frameworks */,
+				2E9AF3641393786500D9D1AC /* Foundation.framework in Frameworks */,
+				2E9AF3661393786500D9D1AC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E69BDE51395CCB70069C8F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E69BDE91395CDA60069C8F2 /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2E69BDE91395CDA60069C8F2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2E69BECD139688920069C8F2 /* default.png */,
+				2E69BECE139688920069C8F2 /* default@2x.png */,
+				2E69BDEA1395CE490069C8F2 /* Placeholder.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		2E9AF3521393786500D9D1AC = {
+			isa = PBXGroup;
+			children = (
+				2E9AF3851393799000D9D1AC /* json-framework */,
+				2E9AF3671393786500D9D1AC /* YAFA */,
+				2E9AF3601393786500D9D1AC /* Frameworks */,
+				2E9AF35E1393786500D9D1AC /* Products */,
+				2E69BDE51395CCB70069C8F2 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		2E9AF35E1393786500D9D1AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AF35D1393786500D9D1AC /* YAFA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E9AF3601393786500D9D1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AF3611393786500D9D1AC /* UIKit.framework */,
+				2E9AF3631393786500D9D1AC /* Foundation.framework */,
+				2E9AF3651393786500D9D1AC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E9AF3671393786500D9D1AC /* YAFA */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AF3B11394128300D9D1AC /* FlickrDataSource.h */,
+				2E9AF3B21394128300D9D1AC /* FlickrDataSource.m */,
+				2EA3FCE31394716100107733 /* FlickrOperation.h */,
+				2EA3FCE41394716100107733 /* FlickrOperation.m */,
+				2EA3FD231394B1F700107733 /* FlickrSearchOperation.h */,
+				2EA3FD241394B1F800107733 /* FlickrSearchOperation.m */,
+				2E9AF3731393786500D9D1AC /* MainWindow.xib */,
+				2EA3FCEA1394759A00107733 /* NSString+URLEncoding.h */,
+				2EA3FCEB1394759A00107733 /* NSString+URLEncoding.m */,
+				2EA3FC4E139435E900107733 /* PhotoTableViewController.h */,
+				2EA3FC4F139435E900107733 /* PhotoTableViewController.m */,
+				2E9AF3761393786500D9D1AC /* RootViewController.h */,
+				2E9AF3771393786500D9D1AC /* RootViewController.m */,
+				2E9AF3791393786500D9D1AC /* RootViewController.xib */,
+				2E69BE5A1395FB010069C8F2 /* WebViewController.h */,
+				2E69BE5B1395FB010069C8F2 /* WebViewController.m */,
+				2E69BE5C1395FB020069C8F2 /* WebViewController.xib */,
+				2E9AF3701393786500D9D1AC /* YAFAAppDelegate.h */,
+				2E9AF3711393786500D9D1AC /* YAFAAppDelegate.m */,
+				2EA3FD201394A71F00107733 /* YAFAPhoto.h */,
+				2EA3FD211394A72000107733 /* YAFAPhoto.m */,
+				2E9AF3681393786500D9D1AC /* Supporting Files */,
+			);
+			path = YAFA;
+			sourceTree = "<group>";
+		};
+		2E9AF3681393786500D9D1AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AF3691393786500D9D1AC /* YAFA-Info.plist */,
+				2E9AF36A1393786500D9D1AC /* InfoPlist.strings */,
+				2E9AF36D1393786500D9D1AC /* YAFA-Prefix.pch */,
+				2E9AF36E1393786500D9D1AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E9AF3851393799000D9D1AC /* json-framework */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AF386139379B700D9D1AC /* JSON.h */,
+				2E9AF387139379B700D9D1AC /* NSObject+SBJSON.h */,
+				2E9AF388139379B700D9D1AC /* NSObject+SBJSON.m */,
+				2E9AF389139379B700D9D1AC /* NSString+SBJSON.h */,
+				2E9AF38A139379B700D9D1AC /* NSString+SBJSON.m */,
+				2E9AF38B139379B700D9D1AC /* SBJsonBase.h */,
+				2E9AF38C139379B700D9D1AC /* SBJsonBase.m */,
+				2E9AF38D139379B700D9D1AC /* SBJsonParser.h */,
+				2E9AF38E139379B700D9D1AC /* SBJsonParser.m */,
+				2E9AF38F139379B700D9D1AC /* SBJsonWriter.h */,
+				2E9AF390139379B700D9D1AC /* SBJsonWriter.m */,
+			);
+			name = "json-framework";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E9AF35C1393786500D9D1AC /* YAFA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9AF37E1393786500D9D1AC /* Build configuration list for PBXNativeTarget "YAFA" */;
+			buildPhases = (
+				2E9AF3591393786500D9D1AC /* Sources */,
+				2E9AF35A1393786500D9D1AC /* Frameworks */,
+				2E9AF35B1393786500D9D1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YAFA;
+			productName = YAFA;
+			productReference = 2E9AF35D1393786500D9D1AC /* YAFA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E9AF3541393786500D9D1AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = TripIt.com;
+			};
+			buildConfigurationList = 2E9AF3571393786500D9D1AC /* Build configuration list for PBXProject "YAFA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E9AF3521393786500D9D1AC;
+			productRefGroup = 2E9AF35E1393786500D9D1AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E9AF35C1393786500D9D1AC /* YAFA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E9AF35B1393786500D9D1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9AF36C1393786500D9D1AC /* InfoPlist.strings in Resources */,
+				2E9AF3751393786500D9D1AC /* MainWindow.xib in Resources */,
+				2E9AF37B1393786500D9D1AC /* RootViewController.xib in Resources */,
+				2E69BDEB1395CE490069C8F2 /* Placeholder.png in Resources */,
+				2E69BE5E1395FB020069C8F2 /* WebViewController.xib in Resources */,
+				2E69BECF139688920069C8F2 /* default.png in Resources */,
+				2E69BED0139688920069C8F2 /* default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E9AF3591393786500D9D1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9AF36F1393786500D9D1AC /* main.m in Sources */,
+				2E9AF3721393786500D9D1AC /* YAFAAppDelegate.m in Sources */,
+				2E9AF3781393786500D9D1AC /* RootViewController.m in Sources */,
+				2E9AF391139379B700D9D1AC /* NSObject+SBJSON.m in Sources */,
+				2E9AF392139379B700D9D1AC /* NSString+SBJSON.m in Sources */,
+				2E9AF393139379B700D9D1AC /* SBJsonBase.m in Sources */,
+				2E9AF394139379B700D9D1AC /* SBJsonParser.m in Sources */,
+				2E9AF395139379B700D9D1AC /* SBJsonWriter.m in Sources */,
+				2E9AF3B31394128300D9D1AC /* FlickrDataSource.m in Sources */,
+				2EA3FC51139435EA00107733 /* PhotoTableViewController.m in Sources */,
+				2EA3FCE51394716100107733 /* FlickrOperation.m in Sources */,
+				2EA3FCEC1394759B00107733 /* NSString+URLEncoding.m in Sources */,
+				2EA3FD221394A72000107733 /* YAFAPhoto.m in Sources */,
+				2EA3FD251394B1F800107733 /* FlickrSearchOperation.m in Sources */,
+				2E69BE5D1395FB020069C8F2 /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E9AF36A1393786500D9D1AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9AF36B1393786500D9D1AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E9AF3731393786500D9D1AC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9AF3741393786500D9D1AC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2E9AF3791393786500D9D1AC /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9AF37A1393786500D9D1AC /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E9AF37C1393786500D9D1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E9AF37D1393786500D9D1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2E9AF37F1393786500D9D1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAFA/YAFA-Prefix.pch";
+				INFOPLIST_FILE = "YAFA/YAFA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E9AF3801393786500D9D1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YAFA/YAFA-Prefix.pch";
+				INFOPLIST_FILE = "YAFA/YAFA-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E9AF3571393786500D9D1AC /* Build configuration list for PBXProject "YAFA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9AF37C1393786500D9D1AC /* Debug */,
+				2E9AF37D1393786500D9D1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E9AF37E1393786500D9D1AC /* Build configuration list for PBXNativeTarget "YAFA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9AF37F1393786500D9D1AC /* Debug */,
+				2E9AF3801393786500D9D1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E9AF3541393786500D9D1AC /* Project object */;
+}
