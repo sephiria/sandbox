@@ -74,7 +74,7 @@
             
             if (self.tableView.dragging == NO && self.tableView.decelerating == NO) {
                 dispatch_async(queue, ^{
-                    cell.imageView.image = [photo imageForSize:YAFAPhotoSizeSquare];
+                    [cell.imageView performSelectorOnMainThread:@selector(setImage:) withObject:[photo imageForSize:YAFAPhotoSizeSquare] waitUntilDone:NO];
                 });
             }
         } else {
