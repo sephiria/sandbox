@@ -36,6 +36,7 @@ class MailHandler(InboundMailHandler):
         post.content = allBodies
         post.images = img_links
         post.videos = video_links
+        post.source = "email"
         post.put()
   
     def find_image_links(self, html_message):

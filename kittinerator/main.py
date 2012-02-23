@@ -74,6 +74,11 @@ class Posting(webapp.RequestHandler):
     Handle posting of Posts.
     """
     def post(self):
+        bot_test = self.request.get('bot_test').strip().lower()
+        if (bot_test != 'orange'):
+            self.redirect('/')
+            return
+             
         post = Post()
 
         if users.get_current_user():
@@ -85,6 +90,7 @@ class Posting(webapp.RequestHandler):
                 url = "http://"+url
         post.images = [db.Link(url)]
         post.caption = self.request.get('caption')
+        post.source = "homepage"
         post.put()
         self.redirect('/')
 

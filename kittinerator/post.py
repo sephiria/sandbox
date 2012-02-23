@@ -12,5 +12,6 @@ class Post(db.Model):
     images = db.ListProperty(db.Link)
     videos = db.ListProperty(db.Text)
     attachments = db.ListProperty(db.Blob)
+    source = db.TextProperty()
       
 # End of post.py
