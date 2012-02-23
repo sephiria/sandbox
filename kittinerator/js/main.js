@@ -2,8 +2,6 @@ $(document).ready(function() {
   $("div.postlet-image > img").load(function() {
     if (this.width == 1 || this.height == 1) {
       $(this).parent().hide();  
-    } else if (this.width > $(this).parent().width()) {
-      $(this).scaleImage();
     }
   });
   
