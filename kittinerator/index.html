@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="all-postlets">
-    {% for post_column in posts %}
+    {% for post_column in columns %}
       <div id="column{{ forloop.counter }}" class="column">
       {% for post in post_column %}
       <div class="postlet">
@@ -66,7 +66,22 @@
     </div>
     <br style="clear: both;" /> 
     </div>
-    
+
+	<div class="pagination">
+	    <span class="step-links">
+	        {% if posts.has_previous %}
+	            <a href="?page={{ posts.previous_page_number }}">previous</a>
+	        {% endif %}
+
+	        <span class="current">
+	            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+	        </span>
+
+	        {% if posts.has_next %}
+	            <a href="?page={{ posts.next_page_number }}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
     <div class="posting-area">
       <form action="/sign" method="post">
         <div><b>Add a post:</b></div>

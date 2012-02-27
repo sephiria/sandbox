@@ -7,6 +7,7 @@ import cgi
 import logging
 import operator
 
+from django.core.paginator import Page, Paginator, EmptyPage, PageNotAnInteger
 from google.appengine.ext import db
 from google.appengine.ext.webapp import template
 from google.appengine.api import users
@@ -16,25 +17,46 @@ from google.appengine.ext import db
 
 from post import Post
 
+class GAEPaginator(Paginator):
+    def page(self, number):
+      "Returns a Page object for the given 1-based page number."
+      number = self.validate_number(number)
+      offset = (number - 1) * self.per_page
+      if offset+self.per_page + self.orphans >= self.count:
+        top = self.count
+      return Page(self.object_list.fetch(self.per_page, offset), number, self)
+      
 class MainPage(webapp.RequestHandler):
     """
     Create and populate main page.
     """
     def get(self):
         posts_query = Post.all().order('-date')
-        all_posts = posts_query.fetch(100)
+        paginator = GAEPaginator(posts_query, 100)
+        
+        page = self.request.GET.get('page', 1)
+        try:
+            posts = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            posts = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            posts = paginator.page(paginator.num_pages)
+        
+        visible_posts = posts.object_list
         columns = [[], [], []]
         
         # TODO: calculate contributor ranking fer reals
         contributors = {}
-        for i in range(len(all_posts)):
-            columns[i % len(columns)].append(all_posts[i])
-            if not all_posts[i].author:
+        for i in range(len(visible_posts)):
+            columns[i % len(columns)].append(visible_posts[i])
+            if not visible_posts[i].author:
                 continue
-            if all_posts[i].author in contributors:
-                contributors[all_posts[i].author] += 1
+            if visible_posts[i].author in contributors:
+                contributors[visible_posts[i].author] += 1
             else:
-                contributors[all_posts[i].author] = 1
+                contributors[visible_posts[i].author] = 1
         
         sorted_contributors = sorted(contributors.iteritems(), key=operator.itemgetter(1))
         sorted_contributors.reverse()
@@ -49,9 +71,10 @@ class MainPage(webapp.RequestHandler):
 
         template_values = {
             'top_contributors': top_contributors,
-            'posts': columns,
+            'columns': columns,
             'url': url,
             'url_linktext': url_linktext,
+            'posts': posts,
         }
 
         path = os.path.join(os.path.dirname(__file__), 'index.html')
