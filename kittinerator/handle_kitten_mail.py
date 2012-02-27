@@ -1,4 +1,5 @@
 import logging
+from email.header import decode_header
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.mail_handlers import InboundMailHandler
 from google.appengine.ext.webapp.util import run_wsgi_app
@@ -31,7 +32,8 @@ class MailHandler(InboundMailHandler):
             allBodies = allBodies + body[1].decode()
     
         if hasattr(message, "subject"):
-            post.caption = message.subject
+            subject, encoding = decode_header(message.subject)[0]
+            post.caption = unicode(subject)
         post.author = message.sender
         post.content = allBodies
         post.images = img_links
